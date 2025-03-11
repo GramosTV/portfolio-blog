@@ -1,9 +1,8 @@
+'use client';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Playground from '../components/Playground';
 
 export default function Home() {
-  return (
-    <div>
-      <h1>Home</h1>
-    </div>
-  );
+  return <Playground />;
 }

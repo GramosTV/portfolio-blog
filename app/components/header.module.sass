@@ -1,0 +1,62 @@
+.header
+    padding: 1.5rem 0
+    font-size: 2rem
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    width: 100%
+    z-index: 1000
+    backdrop-filter: blur(8px)
+    background-color: rgba(255, 255, 255, 0.85)
+    padding-left: 2rem
+    padding-right: 2rem
+    div
+        display: flex
+        align-items: center
+    ul
+        display: flex
+        list-style: none
+        li
+            margin-left: 2rem
+            a
+                text-decoration: none
+                transition: .3s
+                display: inline-block
+                &:hover
+                    transform: scale(1.1)
+
+.themeToggle
+    margin-left: 2rem
+    cursor: pointer
+    padding: 0.5rem 1rem
+    border-radius: 4px
+    font-size: 1rem
+    transition: all 0.2s ease
+    display: flex
+    align-items: center
+    gap: 0.5rem
+
+    &.lightMode
+        background: rgba(255, 255, 255, 0.1)
+        border: 1px solid rgba(0, 0, 0, 0.2)
+        color: #333
+        &:hover
+            background-color: rgba(0, 0, 0, 0.05)
+
+    &.darkMode
+        background: rgba(0, 0, 0, 0.2)
+        border: 1px solid rgba(255, 255, 255, 0.3)
+        color: #fff
+        &:hover
+            background-color: rgba(255, 255, 255, 0.1)
+
+body
+    padding-top: 5rem
+
+:global(.dark-theme) .header
+    background-color: #171717
+    color: #fff
